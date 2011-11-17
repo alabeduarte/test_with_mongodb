@@ -21,6 +21,7 @@ module TestWithMongodb
     config.generators do |g|
       g.orm             :mongo_mapper
       g.template_engine :erb
+      g.test_framework  :test_unit, :fixture => true
     end
     
     # Settings in config/environments/* take precedence over those specified here.

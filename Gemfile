@@ -1,5 +1,7 @@
 source 'http://rubygems.org'
 
+require 'mongo'
+
 gem 'rails', '3.1.1'
 gem 'mongo_mapper'
 
@@ -32,5 +34,6 @@ gem 'jquery-rails'
 
 group :test do
   # Pretty printed test output
+  gem 'minitest'
   gem 'turn', :require => false
 end
