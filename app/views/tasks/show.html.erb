@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <b>Owner:</b>
+  <%=h @task.owner.name %>
+</p>
+<p>
   <b>Description:</b>
   <%= @task.description %>
 </p>
